@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 90vh;
+    margin-top: 10px;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: rgb(207, 205, 205);
+    border-radius: 25px;
+}
+
+h1 {
+    color: rgb(41, 68, 58);
+    margin-top: 10px;
+}
+
+.imgWord {
+    display: flex;
+    flex-direction: row;
+}
+
+.image {
+    width: 204px;
+    height: 272px;
+    background-repeat: no-repeat;
+    margin-left: -265px;
+    margin-bottom: -20px;
+}
+
+#secret-word {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-size: 1em;
+    cursor: help;
+    margin-top: 13px;
+}
+
+.letters {
+    width: 16px;
+    text-align: center;
+    border-bottom: 2px solid #8b8b;
+    color: rgb(41, 68, 58);
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+#keyboard {
+    margin-top: 30px;
+}
+
+
+#space {
+    display: flex;
+    justify-content: center;
+}
+
+#space button {
+    width: 80px;
+    text-align: center;
+    margin: 1px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    box-shadow: 0px 2px 5px dimgrey;
+    border-radius: 5px;
+    border: 1px solid dimgrey;
+    color: rgba(82, 121, 82, 0.733);
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 900;
+}
+
+#category {
+    margin-top: 30px;
+    color: rgba(82, 121, 82, 0.733);
+    font-size: 1.2em;
+}
+
+#tips {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#tips .endText {
+    color: rgba(82, 121, 82, 0.733);
+}
+
+@media (min-width: 321px) {
+    #space button {
+        width: 80px;
+        height: 25px;
+    }
+    #category {
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 376px) {
+    #space button {
+        width: 100px;
+        height: 30px;
+    }
+    #secret-word {
+        font-size: 1.3em;
+    }
+    .letters {
+        width: 18px;
+    }
+    #category {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 426px) {
+    #space button {
+        width: 125px;
+        height: 36px;
+    }
+    #secret-word {
+        font-size: 1.5em;
+    }
+    .letters {
+        width: 20px;
+    }
+    #category {
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 769px) {
+    #secret-word {
+        font-size: 2.5em;
+    }
+    .letters {
+        width: 35px;
+    }
+    #category {
+        font-size: 2em;
+    }
+    #space button {
+        width: 240px;
+        height: 38px;
+        font-size: 1.25em;
+    }
+}
+
